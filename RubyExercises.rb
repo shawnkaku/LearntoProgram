@@ -10,41 +10,46 @@
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 puts "Q:1"
 arr.each do |a|
-  puts "#{a.to_s}"
+  puts a
 end
 #2. Same as above, but only print out values greater than 5.
 puts "Q:2"
 arr.each do |a|
   if (a > 5)
-  	puts "#{a.to_s}"
+  	puts a
   end
 end
 #3. Now, using the same array from #2, use the "select" method to extract all odd numbers into a new array.
 puts "Q:3"
-odd_arr = arr.select {|x| x % 2 == 0}
-odd_arr.each do |o|
-  puts "#{o.to_s}"
-end
+odd_arr = arr.select {|x| x % 2 != 0}
+#odd_arr.each do |x|
+#  puts x
+#end
+puts odd_arr
 #4. Append "11" to the end of the array. Prepend "0" to the beginning.
 puts "Q:4"
-arr.push(11)
+#arr.push(11)
+arr << 11
 arr.unshift(0)
-arr.each do |a|
-  puts "#{a.to_s}"
-end
+#arr.each do |a|
+#  puts a
+#end
+puts arr
 #5. Get rid of "11". And append a "3".
 puts "Q:5"
 arr.pop
 arr.push(3)
-arr.each do |a|
-  puts "#{a.to_s}"
-end
+#arr.each do |a|
+#  puts a
+#end
+puts arr
 #6. Get rid of duplicates without specifically removing any one value.
 puts "Q:6"
 arr = arr.uniq
-arr.each do |a|
-  puts "#{a.to_s}"
-end
+#arr.each do |a|
+#  puts a
+#end
+puts arr
 #7. What's the major difference between an Array and a Hash?
 
 #8. Create a Hash using both Ruby 1.8 and 1.9 syntax.
@@ -65,10 +70,11 @@ h.each {|key, value| puts "#{key} is #{value}" }
 #14. Can hash values be arrays? Can you have an array of hashes? (give examples)
 puts "Q:14"
 arr = h.to_a
-arr.each do |a|
-  a.each do |ab|
-    puts "#{ab.to_s}"
-  end
-end
+#arr.each do |a|
+#  a.each do |b|
+#    puts b
+#  end
+#end
+puts arr
 #15. Look at several Rails/Ruby online API sources and say which one your like best and why.
 puts "Q:15"
