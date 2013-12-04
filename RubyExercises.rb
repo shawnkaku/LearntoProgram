@@ -45,7 +45,8 @@ arr.push(3)
 puts arr
 #6. Get rid of duplicates without specifically removing any one value.
 puts "Q:6"
-arr = arr.uniq
+#arr = arr.uniq
+arr.uniq!
 #arr.each do |a|
 #  puts a
 #end
@@ -55,13 +56,14 @@ puts arr
 #8. Create a Hash using both Ruby 1.8 and 1.9 syntax.
 h = Hash.new
 #Suppose you have a h = {a:1, b:2, c:3, d:4}
-h = Hash[ "a" => 1, "b" => 2, "c" => 3, "d" => 4 ]
+#h = Hash[ "a" => 1, "b" => 2, "c" => 3, "d" => 4 ]
+h = {a:1, b:2, c:3, d:4}
 #9. Get the value of key "b".
 puts "Q:9"
-puts h["b"]
+puts h[:b]
 #10. Add to this hash the key:value pair {e:5}
 puts "Q:10"
-h["e"] = 5
+h[:e] = 5
 h.each {|key, value| puts "#{key} is #{value}" }
 #13. Remove all key:value pairs whose value is less than 3.5
 puts "Q:13"
