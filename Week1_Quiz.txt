@@ -1,0 +1,13 @@
+1) 1
+2) Array just have values, and hash have keys and values.
+3) arr = [1, 2, 3, 3]
+   => [1, 2, 3, 3]
+   [1, 2, 3, 3].uniq
+   => [1, 2, 3]
+   [1, 2, 3, 3].uniq!
+   => [1, 2, 3]
+4)
+5) Sample = { "Name"=> "Shawn", "Addr"=> "Taiwan"}
+6) "no way!"
+7) 4
+8) undefined local variable or method `x' for main:Object
